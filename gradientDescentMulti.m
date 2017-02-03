@@ -20,6 +20,10 @@ for iter = 1:num_iters
 
 
 
+  
+    
+    
+    theta = (theta' - (alpha * (1/m)*sum(X.*repmat((X*theta - y), 1, size(X,2)))))';
 
 
 
